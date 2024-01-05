@@ -1,4 +1,4 @@
-FROM rust:1.68.2-buster
+FROM rust:1.70.0-buster
 
 RUN apt-get update && apt-get install -y protobuf-compiler
 RUN cargo install protobuf-codegen
