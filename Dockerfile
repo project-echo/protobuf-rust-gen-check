@@ -1,4 +1,4 @@
-FROM rust:1.83.bullseye
+FROM rust:1.83-bullseye
 
 RUN apt-get update && apt-get install -y protobuf-compiler
 RUN cargo install protobuf-codegen@3.5.1
