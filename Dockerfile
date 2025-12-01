@@ -1,4 +1,4 @@
-FROM rust:1.84-bookworm
+FROM rust:1.88-trixie
 
 RUN apt-get update && apt-get install -y protobuf-compiler
 RUN cargo install protobuf-codegen@3.7.2
